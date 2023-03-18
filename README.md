@@ -2,8 +2,8 @@
 
 
 ## Live web application Link: https://doc-service-949fd.web.app/
-## Client Side Code Link: https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-DevSrabon.git
-### Server Side Code Link: https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-DevSrabon.git ###
+## Client Side Code Link: https://github.com/DevSrabon/Doctors-Services-Client
+### Server Side Code Link: https://github.com/DevSrabon/Doctors-Services-Server-Side ###
 
 
 ### Features:   
