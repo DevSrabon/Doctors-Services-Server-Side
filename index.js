@@ -37,7 +37,7 @@ async function run() {
 				return;
 			}
 			const result = await usersCollection.insertOne(user);
-			res.send(result)
+			res.send(result);
 		})
 
 		app.get('/services', async (req, res) => {
