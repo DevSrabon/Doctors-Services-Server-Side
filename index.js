@@ -30,7 +30,7 @@ async function run() {
 		app.post("/users", async (req, res) => { 
 			const user = req.body;
 			const query = { email: user.email };
-			console.log("🚀 ~ file: index.js:33 ~ app.post ~ user:", user)
+			
 			const alreadyExits = await usersCollection.findOne(query);
 			if (alreadyExits) {
 				res.send(JSON.stringify({ message: 'Already Exits' }));
@@ -104,12 +104,14 @@ const review = await reviewCollection.countDocuments()
 			const myRating = req.body.myRating;
 			const message = req.body.message;
 			const reviewLength = req.body.reviewLength;
+			const avgStars = req.body.avgStars;
 			const options = { upsert: true };
 			const updateDoc = {
 				$set: {
 					myRating,
 					message,
 					reviewLength,
+					avgStars,
 				},
 			};
 			const result = await reviewCollection.updateOne(
