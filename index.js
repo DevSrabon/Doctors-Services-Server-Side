@@ -124,7 +124,7 @@ const review = await reviewCollection.countDocuments()
 				updateDoc,
 				options
 			);
-			res.send({result,service});
+			res.send({...result,...service});
 		});
 
 		app.delete('/reviews/:id', async (req, res) => {
